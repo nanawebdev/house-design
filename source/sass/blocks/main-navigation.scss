@@ -1,13 +1,17 @@
 .main-navigation li {
   list-style: none;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 0;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 
   &:hover {
     border-color: $primary-red;
   }
+}
+
+.main-navigation li + li {
+  margin-left: 16px;
 }
 
 .main-navigation a {
@@ -63,6 +67,10 @@
     }
   }
 
+  .main-navigation__submenu li + li {
+    margin: 0;
+  }
+
   .main-navigation__submenu a {
     padding: 8px 16px;
     display: block;
@@ -70,13 +78,5 @@
     &:hover {
       color: $basic-black;
     }
-  }
-
-  .main-navigation__submenu li:first-child a {
-    padding-top: 16px;
-  }
-
-  .main-navigation__submenu li:last-child a {
-    padding-bottom: 16px;
   }
 }

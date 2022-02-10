@@ -46,9 +46,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: $basic-black;
-  background-image: url("./img/app.png");
-  background-repeat: no-repeat;
-  background-position: 80% 50%;
 }
 
 button {
@@ -67,6 +64,9 @@ button {
 
 .content {
   flex: 1 0 auto;
+  background-image: url("../img/app.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .footer {
@@ -84,6 +84,10 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
