@@ -45,7 +45,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "8.15"
